@@ -1954,21 +1954,20 @@ console.log(_galleryItems.galleryItems);
 const onGalleryPlace = document.querySelector('.gallery');
 
 let picArr = _galleryItems.galleryItems.map(pic => {
-  return `<li class="gallery__item">
-      <a class="gallery__link" href="${pic.original}">
+  return `
+      <a class="gallery__item" href="${pic.original}">
         <img
           class="gallery__image"
           src="${pic.preview}"
-          data-source="${pic.original}"
+          
           alt="${pic.description}"
         />
       </a>
-  </li>`;
+  `;
 });
 
-console.log(picArr);
 onGalleryPlace.insertAdjacentHTML('afterbegin', picArr.join(''));
-const lightbox = new _simplelightbox.default('.gallery a', {
+let gallery = new _simplelightbox.default('.gallery a', {
   captionsData: 'alt',
   captionsDelay: 250
 });
