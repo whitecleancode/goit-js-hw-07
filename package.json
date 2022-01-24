@@ -25,8 +25,11 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+    "simplelightbox": "^2.10.2"
   },
   "dependencies": {
-    "simplelightbox": "^2.10.2"
+    "lightbox": "^0.5.0",
+    "simple": "^0.2.0",
+    
   }
 }
