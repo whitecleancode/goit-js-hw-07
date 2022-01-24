@@ -1,6 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-import SimpleLightbox from 'simplelightbox';
 
 console.log(galleryItems);
 
@@ -19,3 +18,8 @@ let picArr = galleryItems.map(pic => {
   </div>`;
 });
 onGalleryPlace.insertAdjacentHTML('afterbegin', picArr.join(''));
+
+const lightbox = $('.gallery a').simpleLightbox({
+  captionsData: 'alt',
+  captionsDelay: 250,
+});
