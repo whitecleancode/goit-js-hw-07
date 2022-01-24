@@ -1,7 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-import SimpleLightbox from 'simplelightbox';
-console.log(galleryItems);
 
 const onGalleryPlace = document.querySelector('.gallery');
 
